@@ -1,0 +1,24 @@
+.contact-list {
+	flex: 1;
+}
+.contact-list-item {
+	display: flex;
+	flex-direction: 'row';
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.contact-avatar {
+	flex: 0.1;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-size: cover;
+	border-radius: 50px;
+}
+.contact-details {
+	flex: 0.85;
+	margin-left: 20px;
+}
+.contact-remove {
+	flex: 0.05;
+	padding-right: 20px;
+}
