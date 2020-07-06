@@ -1,24 +1,50 @@
 .contact-list {
 	flex: 1;
+	justify-content: center;
+	align-self: center;
+}
+ol {
+	padding: 0;
 }
 .contact-list-item {
 	display: flex;
 	flex-direction: 'row';
 	padding-top: 20px;
 	padding-bottom: 20px;
+	background-color: #90caf9;
+	margin: 20px 20px 0 20px;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .contact-avatar {
 	flex: 0.1;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-size: cover;
-	border-radius: 50px;
+	margin: 0 0 0 20px;
+}
+.avatar {
+	width: 120px;
+	border-radius: 60px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .contact-details {
 	flex: 0.85;
 	margin-left: 20px;
+	align-self: center;
 }
 .contact-remove {
-	flex: 0.05;
-	padding-right: 20px;
+	width: 30px;
+}
+.showing-contacts {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+.button-clear {
+	margin-left: 10px;
+	background-color: transparent;
+	border: none;
+	font-weight: bold;
+	color: #0d46a0;
+}
+.button-clear:focus {
+	outline: none;
 }
