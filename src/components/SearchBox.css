@@ -1,3 +1,6 @@
+a {
+	align-self: center;
+}
 .list-seach-top {
 	flex: 1;
 	display: flex;

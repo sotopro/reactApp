@@ -1,0 +1,43 @@
+.back-icon {
+	width: 24px;
+	margin: 20px 0 0 20px;
+}
+.create-contact-form {
+	padding: 20px;
+	max-width: 500px;
+	margin: 0 auto;
+	display: flex;
+}
+.create-contact-avatar-input {
+	min-width: 60px;
+	height: 60px;
+	background-color: white;
+	background-image: url('../../assets/user.svg');
+	background-size: 32px 32px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}
+.create-contact-details {
+	margin-left: 20px;
+}
+
+.create-contact-details input {
+	width: 100%;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	font-size: inherit;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: 0;
+}
+.create-contact-details button {
+	margin-top: 20px;
+	background: #90caf9;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: inherit;
+	border: none;
+	outline: 0;
+}
