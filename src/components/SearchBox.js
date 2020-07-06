@@ -1,9 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SearchBox.css';
 import SearchIcon from '../assets/search.svg';
 
 const SearchBox = (props) => {
-	const { placeholder, value, onChangeText, rightIcon, onClickRight } = props;
+	const {
+		placeholder,
+		value,
+		route,
+		onChangeText,
+		rightIcon,
+		onClickRight,
+	} = props;
 	const handleIconEvent = () => {
 		onClickRight && onClickRight();
 	};
@@ -18,12 +26,9 @@ const SearchBox = (props) => {
 				onChange={(event) => onChangeText(event.target.value)}
 			/>
 			{rightIcon ? (
-				<img
-					alt='icon'
-					onClick={() => handleIconEvent()}
-					className='right-icon'
-					src={rightIcon}
-				/>
+				<Link to={route} onClick={() => handleIconEvent()}>
+					<img alt='icon' className='right-icon' src={rightIcon} />
+				</Link>
 			) : null}
 		</div>
 	);

@@ -54,6 +54,7 @@ class ListsContacts extends Component {
 					onChangeText={this.searchContacts}
 					rightIcon={AddUserIcon}
 					onClickRight={this.addUser}
+					route={'/create'}
 				/>
 				{showingContacts.length !== contacts.length ? (
 					<div className='showing-contacts'>
