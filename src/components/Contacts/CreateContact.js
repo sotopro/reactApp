@@ -10,6 +10,7 @@ class CreateContact extends Component {
 		const { onCreateContact } = this.props;
 		e.preventDefault();
 		const values = serializeform(e.target, { hash: true });
+		console.log('values', values);
 		onCreateContact && onCreateContact(values);
 	};
 	render() {
@@ -29,7 +30,7 @@ class CreateContact extends Component {
 					/>
 					<div className='create-contact-details'>
 						<input type='text' name='name' placeholder='Name' />
-						<input type='text' email='name' placeholder='Email' />
+						<input type='text' name='email' placeholder='Email' />
 						<button>Add Contact</button>
 					</div>
 				</form>

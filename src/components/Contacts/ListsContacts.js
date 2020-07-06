@@ -72,7 +72,7 @@ class ListsContacts extends Component {
 				) : null}
 				<ol className='contact-list'>
 					{showingContacts.map((contact) => (
-						<li key={contact.id} className='contact-list-item'>
+						<li key={contact.name} className='contact-list-item'>
 							<div className='contact-avatar'>
 								<img
 									alt='avatar'
