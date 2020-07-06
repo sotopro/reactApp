@@ -4,6 +4,7 @@ import './App.css';
 import ListsContacts from './components/Contacts/ListsContacts';
 import CreateContact from './components/Contacts/CreateContact';
 import ContactsAPI from './utils/ContactsAPI';
+import MealList from './components/Meal/MealList';
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -60,6 +61,7 @@ class App extends Component {
 						/>
 					)}
 				/>
+				<Route path='/meal' exact component={MealList} />
 			</div>
 		);
 	}
